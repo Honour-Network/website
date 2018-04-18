@@ -1,0 +1,22 @@
+.i-section {
+  padding-left: px2(20);
+  padding-right: px2(20);
+  &-title {
+    @extend %no-margin;
+    font-size: px2(26);
+    color: #4324BA;
+    line-height: px2(30);
+    text-align: center;
+    font-weight: normal;
+  }
+  &-sub-title {
+    text-align: center;
+    font-size: px2(16);
+    line-height: px2(18);
+    margin-top: px2(10);
+    margin-bottom: 0;
+  }
+}
+.u-web {
+  display: none !important;
+}

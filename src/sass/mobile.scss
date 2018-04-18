@@ -1,0 +1,22 @@
+@import "./mixins";
+@import "./global";
+@import "./mobile/global";
+@import "./mobile/header";
+@import "./mobile/footer";
+
+// index
+@import "./mobile/index/common";
+@import "./mobile/index/banner";
+@import "./mobile/index/vision";
+@import "./mobile/index/service";
+@import "./mobile/index/advantage";
+@import "./mobile/index/now";
+@import "./mobile/index/platform";
+@import "./mobile/index/develop";
+@import "./mobile/index/team";
+@import "./mobile/index/social";
+@import "./mobile/index/connect";
+@import "./mobile/index/nav";
+
+// team
+@import "./mobile/team/list";

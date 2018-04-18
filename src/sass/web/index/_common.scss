@@ -1,0 +1,23 @@
+.i-section {
+  &-title {
+    @extend %no-margin;
+    font-size: 46px;
+    color: #4324BA;
+    line-height: 53px;
+    text-align: center;
+    font-weight: normal;
+  }
+  &-title-type2 {
+    color: #FF5C3C;
+  }
+  &-sub-title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 37px;
+    margin-top: 11px;
+    margin-bottom: 0;
+  }
+}
+.u-mobile {
+  display: none !important;
+}

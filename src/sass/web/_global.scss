@@ -1,0 +1,31 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.back-to-top {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 140px;
+  bottom: 94px;
+  background: url("../assets/backtop.svg") no-repeat center;
+  background-size: 100%;
+  transition: opacity 0.5s;
+}
+
+.base-style {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #888;
+  h2 {
+    color: #333;
+    margin-bottom: 50px;
+  }
+  ol {
+    padding-left: 0;
+  }
+}

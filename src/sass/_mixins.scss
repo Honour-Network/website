@@ -1,0 +1,21 @@
+%no-list-style {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+%no-margin {
+  margin: 0;
+}
+%no-padding {
+  padding: 0;
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// for mobile platform
+@function px2($px) {
+  @return $px * 2px;
+}

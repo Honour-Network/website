@@ -1,0 +1,85 @@
+.i-team {
+  background-color: #fbfbfb;
+  padding-top: px2(46);
+  padding-bottom: px2(70);
+  &-btn {
+    margin: 0 auto;
+    display: block;
+    @extend .text-center;
+    line-height: px2(37);
+    width: px2(226);
+    height: px2(37);
+    border: px2(1) solid #4324ba;
+    border-radius: px2(20);
+    color: #4324ba;
+    transition: color 0.35s;
+    font-size: px2(16);
+    text-decoration: none;
+  }
+  &-list {
+    margin-top: px2(17);
+    // padding-top: 56px;
+    @extend %no-list-style;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &-item {
+    width: px2(158);
+    height: px2(304);
+    margin-right: px2(19);
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+    &-avator {
+      padding: px2(43) px2(34) px2(17);
+      position: relative;
+      & > img {
+        width: px2(100);
+        height: px2(100);
+        transition: filter 0.25s;
+        &:focus {
+          filter: none;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: px2(33.5);
+        top: px2(42.5);
+        width: px2(101);
+        height: px2(101);
+        background: url("../assets/avators/head-mask-gray.svg") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    &-avator-block {
+      &::after {
+        display: none;
+      }
+    }
+    &-desc {
+      @extend .text-center;
+    }
+    &-name {
+      @extend %no-margin;
+      color: #4324ba;
+
+      font-size: px2(14);
+      color: #4324ba;
+      line-height: px2(18);
+      margin-bottom: px2(5);
+    }
+    &-position {
+      font-size: px2(12);
+      color: #4324ba;
+      line-height: px2(13);
+      margin-bottom: px2(20);
+    }
+    &-office {
+      font-size: px2(12);
+      line-height: px2(13);
+      color: #ff5c3c;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+
+.t-list {
+  padding-top: 60px + 90px;
+}
+.t-item {
+  padding: 80px 0;
+  display: flex;
+  border-bottom: 1px solid #9d9d9d;
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  justify-content: space-between;
+  &-avator {
+    width: 260px;
+    height: 260px;
+    position: relative;
+    margin-right: 40px;
+    & > img {
+      width: 260px;
+      height: 260px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 260px;
+      height: 260px;
+      background: url("../assets/avators/head-mask-white.svg") no-repeat center;
+      background-size: 100%;
+    }
+    &-linkedin {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 36px;
+      height: 36px;
+      background: url("../assets/team/linked-in.svg") no-repeat center;
+      background-size: 100%;
+      z-index: 1000;
+    }
+  }
+  &-avator-company {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  &-staff {
+    flex: 1;
+    &-name {
+      font-size: 30px;
+      color: #4324ba;
+      line-height: 35px;
+      @extend %no-margin;
+      margin-bottom: 5px;
+    }
+    &-position {
+      font-size: 20px;
+      font-weight: normal;
+      color: #4324ba;
+      line-height: 24px;
+      @extend %no-margin;
+      margin-bottom: 11px;
+    }
+    &-position-desc {
+      font-size: 20px;
+      color: #ff5c3c;
+      line-height: 30px;
+      @extend %no-margin;
+      margin-bottom: 20px;
+      &>a {
+      color: #ff5c3c;        
+      }
+    }
+    &-introduce {
+      font-size: 20px;
+      color: #777777;
+      letter-spacing: 0.33px;
+      line-height: 30px;
+      @extend %no-margin;
+      margin-bottom: 20px;
+    }
+    &-companies {
+      width: 100%;
+      max-height: 250px;
+    }
+  }
+}

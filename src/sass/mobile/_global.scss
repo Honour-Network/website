@@ -1,0 +1,18 @@
+.base-style {
+    font-size: px2(14);
+    padding:px2(60) px2(20)  px2(20);
+}
+
+.back-to-top {
+    display: none;
+    z-index: 1000;
+    width: px2(50);
+    height: px2(50);
+    position: fixed;
+    right: px2(10);
+    bottom: px2(40);
+    background: url("../assets/backtop.svg") no-repeat center;
+    background-size: 100%;
+    transition: opacity 0.5s;
+  }
+  

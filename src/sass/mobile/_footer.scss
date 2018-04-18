@@ -1,0 +1,9 @@
+.g-footer {
+  &-copyright {
+    background-color: #39277e;
+    font-size: px2(14);
+    color: #ffffff;
+    height: px2(36);
+    @extend %flex-center;
+  }
+}

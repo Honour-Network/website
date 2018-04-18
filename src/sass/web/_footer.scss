@@ -1,0 +1,54 @@
+.g-footer {
+  background-color: #39277e;
+  &-inner {
+    height: 275px;
+    display: flex;
+    justify-content: space-between;
+    color: #fbfbfb;
+    font-size: 16px;
+    a {
+      color: inherit;
+    }
+  }
+  &-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &-item {
+    padding-top: 53px;
+    p {
+      @extend %no-margin;
+    }
+    width: 360px;
+    margin-right: 40px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &-title {
+      @extend %no-margin;
+      margin-bottom: 25px;
+      font-size: 24px;
+      line-height: 28px;
+      color: #fff;
+    }
+  }
+  &-contact {
+    &-desc {
+      @extend %no-margin;
+      @extend %no-padding;
+      dd {
+        @extend %no-margin;
+        @extend %no-padding;
+      }
+    }
+  }
+
+  &-copyright {
+    height: 60px;
+    line-height: 60px;
+    @extend .text-center;
+    background-color: #1d0d5e;
+    color: #fff;
+    font-size: 16px;
+  }
+}

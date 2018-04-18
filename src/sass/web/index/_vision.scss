@@ -1,0 +1,17 @@
+.i-vision {
+  background-color:#fbfbfb; 
+  height: 250px;
+  &-inner {
+    display: flex;
+  }
+  &-item {
+    width: 560px;
+    height: 250px;
+    @extend %flex-center;
+    &-inner {
+      width: 370px;
+      height: 87px;
+      font-size: 26px;
+    }
+  }
+}

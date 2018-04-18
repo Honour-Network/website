@@ -1,0 +1,39 @@
+.i-develop {
+  padding-top: px2(50);
+  padding-bottom: px2(50);
+  &-list {
+    @extend %no-list-style;
+    margin-top: px2(20);
+  }
+  &-item {
+    margin-bottom: px2(40);
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &-asset {
+      height: px2(120);
+      background-color: #fbfbfb;
+      margin-bottom: px2(20);
+      @extend %flex-center;
+      img {
+        width: px2(100);
+      }
+    }
+    &-title {
+      margin-bottom: px2(10);
+      font-size: px2(18);
+      font-weight: normal;
+      line-height: px2(21);
+      text-align: center;
+    }
+    &-feature {
+      @extend %no-list-style;
+      & > li {
+        text-align: center;
+        font-size: px2(16);
+        color: #999999;
+        line-height: px2(18);
+      }
+    }
+  }
+}

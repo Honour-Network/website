@@ -1,0 +1,38 @@
+.i-now {
+  padding-top: px2(40);
+  padding-bottom: px2(40);
+  &-list {
+    @extend %no-list-style;
+    padding-top: px2(40);
+  }
+  &-item {
+    margin-bottom: px2(45);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &-asset {
+      background-color: #fbfbfb;
+      height: px2(120);
+      margin-bottom: px2(15);
+      @extend %flex-center;
+      img {
+        width: px2(100);
+      }
+    }
+    &-desc {
+  
+    }
+    &-title {
+      font-size: px2(18);
+      font-weight: normal;
+      line-height: px2(21);
+      margin-top: 0;
+      margin-bottom: px2(10);
+    }
+    &-para {
+      font-size: px2(16);
+      line-height: px2(18);
+      color: #999;
+    }
+  }
+}

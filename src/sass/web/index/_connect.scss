@@ -1,0 +1,45 @@
+.i-connect {
+    height: 616px;
+    background-color: #4324ba;
+    color: #fff;
+    padding-top: 120px;
+    .i-section-title {
+      color: #fff;
+    }
+    &-content {
+      @extend .text-center;
+      padding-top: 50px;
+      &-btn {
+        display: inline-block;
+        @extend .text-center;
+        line-height: 47px;
+        width: 226px;
+        height: 47px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        color: #fff;
+        transition: color 0.35s;
+        font-size: 16px;
+        text-decoration: none;
+        &:hover {
+          background-color: #fff;
+          color: $base-color;
+        }
+      }
+      &-list {
+        padding-top: 110px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        a {
+          display: inline-block;
+          margin-right: 33px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  

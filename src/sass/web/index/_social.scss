@@ -1,0 +1,48 @@
+.i-social {
+  padding-top: 115px;
+  padding-bottom: 62px;
+  &-list {
+    margin-top: 68px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    margin-right: 40px;
+    width: 560px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &-asset {
+      height: 412px;
+      margin-bottom: 65px;
+
+      & > img{
+        width: 100%;
+      }
+    }
+    &-desc {
+      margin-bottom: 36px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      @extend %no-margin;
+      font-size: 26px;
+      font-weight: normal;
+      line-height: 30px;
+      margin-bottom: 1px;
+    }
+    &-feature {
+      @extend %no-list-style;
+      & > li {
+        font-size: 22px;
+        color: #777777;
+        line-height: 26px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
