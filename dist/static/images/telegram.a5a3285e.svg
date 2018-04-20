@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="底栏" transform="translate(-1179.000000, -205.000000)" fill="#FBFBFB">
+            <path d="M1184,205 L1217,205 C1219.76142,205 1222,207.238576 1222,210 L1222,243 C1222,245.761424 1219.76142,248 1217,248 L1184,248 C1181.23858,248 1179,245.761424 1179,243 L1179,210 C1179,207.238576 1181.23858,205 1184,205 Z M1194,228.44898 L1194,228.75 L1196.6,235 L1197.14379,234.477124 L1197,235 L1200.7886,231.555819 L1206.0625,235 L1210,217 L1189,226 L1194,228.44898 Z" id="telegram"></path>
+        </g>
+    </g>
+</svg>
