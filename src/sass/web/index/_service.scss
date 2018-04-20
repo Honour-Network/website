@@ -14,10 +14,19 @@
      .i-service-item-desc {
        margin-right: 40px;
      }
+     .i-service-item-asset3{
+       border-left: 2px solid;
+     }
+     .i-service-item-asset1{
+       border-left: 2px solid;
+     }
    }
    &-right {
      .i-service-item-desc {
        margin-left: 40px;
+     }
+     .i-service-item-asset2{
+       border-right: 2px solid;
      }
    }
    &-desc {
@@ -26,6 +35,7 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
+     color: #ff5c3c;
    }
    &-title {
     margin: 0 0 23px;

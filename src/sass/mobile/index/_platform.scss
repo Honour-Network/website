@@ -1,8 +1,16 @@
 .i-dapp {
-  height: px2(650);
+  height: px2(850);
   background: url("../assets/banner-2.jpg") no-repeat center;
   background-size: cover;
   padding: px2(77) px2(38) px2(46);
+  &-top-text {
+    @extend %no-margin;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
   &-title {
     @extend %no-margin;
     font-size: px2(26);
@@ -18,6 +26,14 @@
     color: #fff;
     line-height: px2(31);
     margin-bottom: px2(60);
+  }
+  &-big-word {
+    //@extend %no-margin;
+    margin: 0px;
+    width: auto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
   }
   &-list {
     background-color: rgba(0, 0, 0, 0.2);

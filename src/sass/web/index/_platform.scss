@@ -1,8 +1,8 @@
 .i-dapp {
-  height: 980px;
+  height: 880px;
   background: url("../assets/banner-2.jpg") no-repeat center;
   background-size: cover;
-  padding: 156px 0 171px;
+  padding: 110px 0 120px;
   &-top-text {
     @extend %no-margin;
     font-size: 40px;
@@ -138,6 +138,7 @@
   }
   &-slogan {
     @extend %no-margin;
+    text-align: center;
     font-size: 32px;
     color: #06bac5;
   }
@@ -145,7 +146,7 @@
 
 .i-cycle {
   padding-top: 101px;
-  height: 1280px;
+  height: 1080px;
   background-image: linear-gradient(
     -180deg,
     rgba(61, 37, 170, 0.9) 0%,
@@ -163,7 +164,7 @@
     font-weight: normal;
     line-height: 46px;
     @extend %no-margin;
-    margin-bottom: 103px;
+    margin-bottom: 40px;
   }
   &-list {
     @extend %no-list-style;
@@ -183,12 +184,15 @@
     &-asset {
       width: 360px;
       height: 260px;
-      margin-bottom: 29px;
+      margin-bottom: 5px;
       @extend %flex-center;
       img {
         width: 130px;
         height: 130px;
       }
+    }
+    &-assets {
+      height: 200px;
     }
     &-title {
       @extend %no-margin;
