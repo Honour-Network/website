@@ -23,7 +23,7 @@ module.exports = merge(baseWebpackConfig, {
     //         //more https://doc.webpack-china.org/configuration/dev-server/
     //     }
     // },
-    host: '192.168.31.121', // 用于手机调试测试。链接电脑本地IP
+    host: '192.168.1.110', // 用于手机调试测试。链接电脑本地IP
     port: 8188 //端口
   },
   module: {
