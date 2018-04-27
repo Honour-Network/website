@@ -17,7 +17,7 @@
     text-align: center;
     color: #fff;
     line-height: px2(30);
-    margin-bottom: px2(35);
+    margin-bottom: px2(10);
   }
   &-sub-title {
     @extend %no-margin;
@@ -26,6 +26,12 @@
     color: #fff;
     line-height: px2(31);
     margin-bottom: px2(60);
+  }
+  &-clearlist_big-word{
+    width: 41%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 42px;
   }
   &-big-word {
     //@extend %no-margin;
@@ -135,6 +141,7 @@
     font-size: px2(19);
     line-height: px2(23);
     color: #06bac5;
+    text-align: center;
   }
 }
 

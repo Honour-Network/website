@@ -1,4 +1,4 @@
-$g-header-height: px2(55);
+$g-header-height: px2(36);
 $g-header-padding: px2(20);
 
 %nav {
@@ -28,6 +28,20 @@ $g-header-padding: px2(20);
     margin-right: px2(-20);
     display: flex;
     align-items: center;
+  }
+  &-navbar-show{
+    display: inline-flex;
+    margin-left: 118px;
+  }
+  &-navbar-item{
+    font-size: 22px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  &-navbar-link{
+    text-decoration: none;
+    color: #fff;
   }
   &-navbar {
     cursor: pointer;

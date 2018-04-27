@@ -29,10 +29,11 @@
   &-big-word {
     //@extend %no-margin;
     margin: 0px;
-    width: auto;
+    // width: auto;
     font-size: 70px;
     text-align: center;
     color: #fff;
+    width: 39%; float: right;margin-right:139px;
   }
   &-list {
     background-color: rgba(0, 0, 0, 0.2);
@@ -44,6 +45,12 @@
     width: 100%;
     margin-top: 32px;
     margin-bottom: 32px;
+  }
+  &-clearlist_big-word{
+    width: 34%;
+    float: left;
+    margin-top: 10px;
+    margin-left:176px;
   }
   &-item {
     width: 50%;
@@ -293,8 +300,9 @@
     &-desc {
       font-size: 18px;
       color: #333333;
-      line-height: 24px;
+      line-height: 19px;
       margin-bottom: 8px;
+      margin-top:10px;
       //@extend %no-margin;
     }
   }

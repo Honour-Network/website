@@ -1,4 +1,4 @@
-import Lazyload from "lazyload";
+import Lazyload from "./lazyload.js";
 import responsive from "./responsive.js";
 import handleNavs from "./nav.js";
 import { getId, returnToBack, onInitScorllListener } from "./utils";

@@ -2,6 +2,20 @@
   background-color: #fbfbfb;
   padding-top: 82px;
   padding-bottom: 113px;
+    &-btn {
+    margin: 0 auto;
+    display: block;
+    @extend .text-center;
+    line-height: px2(37);
+    width: px2(226);
+    height: px2(37);
+    border: px2(1) solid #4324ba;
+    border-radius: px2(20);
+    color: #4324ba;
+    transition: color 0.35s;
+    font-size: px2(16);
+    text-decoration: none;
+  }
   &-list {
     //border-top: 1px solid #777;
     margin-top: 38px;
