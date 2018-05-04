@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Honour Network</title>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico"/>
   <style>
     .hide {
       display: none;
@@ -19,11 +19,12 @@
 
 <body class='hide'>
 <section class='i-banner'>
-<script>
-  if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    document.write('<video class="i-banner-video u-web" id="video" controls loop autoplay><source src="static/movie.mp4" type="video/mp4" /></video>');
-  }
-</script>
+  <script>
+    if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      document.write('<video class="i-banner-video u-web" id="video" controls loop autoplay><source src="static/movie.mp4" type="video/mp4" /></video>');
+    }
+  </script>
+
   <div class='i-banner-inner'>
     <header class='g-header ' id='gHeader'>
       <div class="g-header-logo">
@@ -775,19 +776,44 @@
           </div>
         </div>
       </div>
-      <div class='i-social-list-wrapper u-mobile'>
-        <div class='i-social-list'>
+      <div class='i-social-describe u-mobile' id="describe">
+        <div class="animal">
+            <img class='i-social-asset lazyload' src='../assets/placeholder.png' data-src="../assets/social_giveback2.jpg" alt="" style="width:100%;height:100%;">
+        </div>
+	      <div class="i-social-animal-describe">
+      		<p class="i-social-sub-title">Enhance Intellectual</p>
+      		<p class="i-social-sub-title-none">Financial Literacy & Technology Training</p>
+      		<p class="i-social-sub-title">Enhance Minds</p>
+      		<p class="i-social-sub-title-sec">Programs for kids, educators & parents to see the world outside of villages. To change and evolve their minds</p>
+	      </div>
+        <!-- <div class='i-social-list'>
           <div class="i-social-item" data-title = 'Enhance Intellectual' data-sub-title='Financial Literacy & Technology Training'>
-            <!-- <img class='i-social-asset lazyload' src="" data-src="" alt=""> -->
             <img class='i-social-asset lazyload' src='../assets/placeholder.png' data-src="../assets/social_giveback2.jpg" alt="" style="width:100%;height:100%;">
           </div>
           <div class="i-social-item" data-title = 'Social Schooling' data-sub-title='Programs to entice kids to go back to school.'>
             <img class='i-social-asset lazyload' src='../assets/placeholder.png' data-src="../assets/social_giveback1.jpg" style="width:100%;height:100%;">
-            <!-- <img class='i-social-asset lazyload' src="" data-src="" alt=""> -->
           </div>
-        </div>
+        </div> -->
       </div>
-
+      <div class='i-social-describe u-mobile'>
+        <div class="animal">
+            <img class='i-social-asset lazyload' src='../assets/placeholder.png' data-src="../assets/social_giveback1.jpg" alt="" style="width:100%;height:100%;">
+        </div>
+	      <div class="i-social-animal-describe">
+      		<p class="i-social-sub-title">Social Schooling</p>
+      		<p class="i-social-sub-title-none-break">Programs to entice kids to go back to school. To show parents value of sending kids to schools.</p>
+      		<p class="i-social-sub-title">Financial Banking</p>
+      		<p class="i-social-sub-title-sec">Crypto wallet for the extreme poor. For usage after leaving school age where future worth helps in supporting their future social needs.</p>
+	      </div>
+        <!-- <div class='i-social-list'>
+          <div class="i-social-item" data-title = 'Enhance Intellectual' data-sub-title='Financial Literacy & Technology Training'>
+            <img class='i-social-asset lazyload' src='../assets/placeholder.png' data-src="../assets/social_giveback2.jpg" alt="" style="width:100%;height:100%;">
+          </div>
+          <div class="i-social-item" data-title = 'Social Schooling' data-sub-title='Programs to entice kids to go back to school.'>
+            <img class='i-social-asset lazyload' src='../assets/placeholder.png' data-src="../assets/social_giveback1.jpg" style="width:100%;height:100%;">
+          </div>
+        </div> -->
+      </div>
     </div>
   </section>
   <!-- <section class="i-section i-connect" id='connect'>
