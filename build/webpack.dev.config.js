@@ -23,19 +23,19 @@ module.exports = merge(baseWebpackConfig, {
     //         //more https://doc.webpack-china.org/configuration/dev-server/
     //     }
     // },
-    host: '192.168.1.110', // 用于手机调试测试。链接电脑本地IP
+    host: '192.168.31.210', // 用于手机调试测试。链接电脑本地IP
     port: 8188 //端口
   },
   module: {
     rules: [
       {
-        test: /\.(js)$/,
-        loader: "eslint-loader",
-        enforce: "pre", // 在babel-loader对源码进行编译前进行lint的检查
-        include: path.resolve(__dirname, "../src/"), // src文件夹下的文件需要被lint
-        options: {
-          formatter: require("eslint-friendly-formatter") // 编译后错误报告格式
-        }
+        // test: /\.(js)$/,
+        // loader: "eslint-loader",
+        // enforce: "pre", // 在babel-loader对源码进行编译前进行lint的检查
+        // include: path.resolve(__dirname, "../src/"), // src文件夹下的文件需要被lint
+        // options: {
+        //   formatter: require("eslint-friendly-formatter") // 编译后错误报告格式
+        // }
       },
       ...utils.styleLoaders({ sourceMap: false, extract: true })
     ]

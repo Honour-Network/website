@@ -9,10 +9,11 @@
     height: 250px;
     @extend %flex-center;
     &-inner {
-      width: 370px;
+      line-height: 61px;
       height: 87px;
       font-size: 26px;
       text-align: center;
+      color: #4324ba;
     }
   }
 }

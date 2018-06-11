@@ -2,6 +2,7 @@
 .t-list {
   padding-top: 60px + 90px;
 }
+
 .t-item {
   padding: 80px 0;
   display: flex;
@@ -69,8 +70,8 @@
       line-height: 30px;
       @extend %no-margin;
       margin-bottom: 20px;
-      &>a {
-      color: #ff5c3c;        
+      & > a {
+        color: #ff5c3c;
       }
     }
     &-introduce {
@@ -84,6 +85,18 @@
     &-companies {
       width: 100%;
       max-height: 250px;
+    }
+    &-chart {
+      &-table {
+        margin-bottom: 20px;
+        td {
+          padding: 15px;
+        }
+      }
+      &-canvas {
+        width: 1170px;
+        height: 300px;
+      }
     }
   }
 }

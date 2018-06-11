@@ -10,7 +10,7 @@ exports.cssLoaders = options => {
     loader: require.resolve("css-loader"),
     options: {
       importLoaders: 1,
-      minimize: process.env.NODE_ENV === "production" ? true : false,
+      minimize: process.env.NODE_ENV === "production",
       sourceMap:
         process.env.NODE_ENV === "production" ? options.sourceMap : false
     }

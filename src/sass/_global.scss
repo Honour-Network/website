@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "./normalize";
 
-$webFontUrl: "http://192.168.1.110:8188/static";
+$webFontUrl: "http://192.168.31.210:8188/static";
 @if ($env == "production") {
   $webFontUrl: "/static";
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bideo.js": "^1.0.0",
+    "echarts": "^4.1.0",
     "lazyload": "^2.0.0-beta.2",
     "lodash": "^4.17.5",
     "popmotion": "^8.1.22",

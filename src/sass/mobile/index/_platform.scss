@@ -18,6 +18,15 @@
     color: #fff;
     line-height: px2(30);
     margin-bottom: px2(10);
+    &-formLink {
+      margin-bottom: 0;
+      color: #fff;
+      text-decoration: none;
+    }
+    &-link {
+      color: #fff;
+      text-decoration: none;
+    }
   }
   &-sub-title {
     @extend %no-margin;
@@ -76,9 +85,7 @@
   background-color: #fff;
   padding: px2(50) px2(20);
   &-type-2 {
-    background-color: #fbfbfb;
-    padding-top: 0;
-    padding-bottom: 163px;
+    padding:0;
   }
   &-list {
     @extend %no-list-style;
@@ -111,6 +118,7 @@
     }
     &-feature {
       @extend %no-list-style;
+      text-align: left;
       &-item {
         font-size: px2(16);
         color: #999;
@@ -262,4 +270,63 @@
       height: 100%;
     }
   }
+}
+.i-problems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding-top: px2(35);
+  padding-bottom: px2(35);
+  &-title {
+    text-align: center;
+    font-size: px2(26);
+    color: #4324ba;
+    padding: 0 5px;
+    line-height: px2(26);
+    margin-bottom: px2(20);
+  }
+  &-subTitle {
+    width: 100%;
+    text-align: left;
+    font-size: px2(18);
+    margin-left: px2(50);
+    padding: 0 5px;
+    line-height: px2(18);
+  }
+  &-item {
+    width: 100%;
+    text-align: left;
+    padding-left: px2(50);
+    padding-right: px2(30);
+    font-size: px2(16);
+    line-height: px2(16);
+    margin-bottom: px2(20);
+    &:before {
+      content: "";
+      position: relative;
+      left: px2(-15);
+      top: px2(11);
+      display: block;
+      width: px2(5);
+      height: px2(5);
+      border-radius: px2(5);
+      background: red;
+    }
+  }
+  &-textRed {
+    color: red;
+  }
+  &-textGray {
+    color: #999999;
+  }
+  &-textBig {
+    font-size: px2(20);
+  }
+}
+.i-bgGray {
+  background-color: #fbfbfb;
+  padding-top: 79px;
+  padding-bottom: 79px;
 }

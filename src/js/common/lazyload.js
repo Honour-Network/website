@@ -13,24 +13,24 @@
  *
  */
 
-(function(root, factory) {
-  if (typeof exports === "object") {
-    module.exports = factory(root);
-  } else if (typeof define === "function" && define.amd) {
-    define([], factory(root));
+(function (root, factory) {
+  if (typeof exports === 'object') {
+    module.exports = factory(root)
+  } else if (typeof define === 'function' && define.amd) {
+    define([], factory(root))
   } else {
-    root.LazyLoad = factory(root);
+    root.LazyLoad = factory(root)
   }
 })(
-  typeof global !== "undefined" ? global : this.window || this.global,
-  function(root) {
-    "use strict";
+  typeof global !== 'undefined' ? global : this.window || this.global,
+  function (root) {
+    'use strict'
 
     const defaults = {
-      src: "data-src",
-      srcset: "data-srcset",
-      selector: ".lazyload"
-    };
+      src: 'data-src',
+      srcset: 'data-srcset',
+      selector: '.lazyload'
+    }
 
     /**
      * Merge two or more objects. Returns a new object.
@@ -39,111 +39,111 @@
      * @param {Object}   objects  The objects to merge together
      * @returns {Object}          Merged values of defaults and options
      */
-    const extend = function() {
-      let extended = {};
-      let deep = false;
-      let i = 0;
-      let length = arguments.length;
+    const extend = function () {
+      let extended = {}
+      let deep = false
+      let i = 0
+      let length = arguments.length
 
       /* Check if a deep merge */
-      if (Object.prototype.toString.call(arguments[0]) === "[object Boolean]") {
-        deep = arguments[0];
-        i++;
+      if (Object.prototype.toString.call(arguments[0]) === '[object Boolean]') {
+        deep = arguments[0]
+        i++
       }
 
       /* Merge the object into the extended object */
-      let merge = function(obj) {
+      let merge = function (obj) {
         for (let prop in obj) {
           if (Object.prototype.hasOwnProperty.call(obj, prop)) {
             /* If deep merge and property is an object, merge properties */
             if (
               deep &&
-              Object.prototype.toString.call(obj[prop]) === "[object Object]"
+              Object.prototype.toString.call(obj[prop]) === '[object Object]'
             ) {
-              extended[prop] = extend(true, extended[prop], obj[prop]);
+              extended[prop] = extend(true, extended[prop], obj[prop])
             } else {
-              extended[prop] = obj[prop];
+              extended[prop] = obj[prop]
             }
           }
         }
-      };
+      }
 
       /* Loop through each object and conduct a merge */
       for (; i < length; i++) {
-        let obj = arguments[i];
-        merge(obj);
+        let obj = arguments[i]
+        merge(obj)
       }
 
-      return extended;
-    };
+      return extended
+    }
 
-    function LazyLoad(images, options) {
-      this.settings = extend(defaults, options || {});
-      this.images = images || document.querySelectorAll(this.settings.selector);
-      this.observer = null;
-      this.init();
+    function LazyLoad (images, options) {
+      this.settings = extend(defaults, options || {})
+      this.images = images || document.querySelectorAll(this.settings.selector)
+      this.observer = null
+      this.init()
     }
 
     LazyLoad.prototype = {
-      init: function() {
-        this.loadImages();
+      init: function () {
+        this.loadImages()
       },
 
-      loadAndDestroy: function() {
+      loadAndDestroy: function () {
         if (!this.settings) {
-          return;
+          return
         }
-        this.loadImages();
-        this.destroy();
+        this.loadImages()
+        this.destroy()
       },
 
-      loadImages: function() {
+      loadImages: function () {
         if (!this.settings) {
-          return;
+          return
         }
 
-        let self = this;
-        this.images.forEach(function(image) {
-          console.log(image);
-          let src = image.getAttribute(self.settings.src);
-          let srcset = image.getAttribute(self.settings.srcset);
-          if (image.tagName.toLowerCase() === "img") {
+        let self = this
+        this.images.forEach(function (image) {
+          console.log(image)
+          let src = image.getAttribute(self.settings.src)
+          let srcset = image.getAttribute(self.settings.srcset)
+          if (image.tagName.toLowerCase() === 'img') {
             if (src) {
-              image.src = src;
+              image.src = src
             }
             if (srcset) {
-              image.srcset = srcset;
+              image.srcset = srcset
             }
           } else {
-            image.style.backgroundImage = "url(" + src + ")";
+            image.style.backgroundImage = 'url(' + src + ')'
           }
-        });
+        })
       },
 
-      destroy: function() {
+      destroy: function () {
         if (!this.settings) {
-          return;
+          return
         }
-        this.observer.disconnect();
-        this.settings = null;
+        this.observer.disconnect()
+        this.settings = null
       }
-    };
-
-    root.lazyload = function(images, options) {
-      return new LazyLoad(images, options);
-    };
-
-    if (root.jQuery) {
-      const $ = root.jQuery;
-      $.fn.lazyload = function(options) {
-        options = options || {};
-        options.attribute = options.attribute || "data-src";
-        /* eslint-disable no-new */
-        new LazyLoad($.makeArray(this), options);
-        return this;
-      };
     }
 
-    return LazyLoad;
+    root.lazyload = function (images, options) {
+      return new LazyLoad(images, options)
+    }
+
+    if (root.jQuery) {
+      const $ = root.jQuery
+      $.fn.lazyload = function (options) {
+        options = options || {}
+        options.attribute = options.attribute || 'data-src'
+        /* eslint-disable no-new */
+        new LazyLoad($.makeArray(this), options)
+        return this
+      }
+    }
+
+    return LazyLoad
   }
-);
+)

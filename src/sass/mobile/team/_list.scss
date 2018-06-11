@@ -87,5 +87,17 @@
       width: 100%;
       max-height: px2(79);
     }
+    &-chart {
+      &-table {
+        margin-bottom: px2(10);
+        td {
+          padding: px2(7.5);
+        }
+      }
+      &-canvas {
+        width: 100%;
+        height: px2(150);
+      }
+    }
   }
 }

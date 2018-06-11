@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(#4324ba, 0.9);
+    background-color: rgba(60, 120, 216, 0.9);
   }
   &-video {
     position: absolute;
@@ -70,6 +70,7 @@
     }
   }
   &-mail {
+    display: none;
     &-title {
       font-size: 22px;
       color: #ffffff;
@@ -133,6 +134,7 @@
     }
   }
 }
+
 div[for="mce-EMAIL"] {
   padding-top: 10px;
   width: 265px;
