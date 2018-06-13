@@ -137,7 +137,7 @@
     color: #4324ba;
   }
   &-graph {
-    height: px2(124);
+    height: px2(162);
     margin-bottom: px2(40);
     &-img {
       width: 100%;
@@ -239,7 +239,7 @@
       }
       &-title {
         font-size: px2(16);
-        line-height: px23(18);
+        line-height: px2(18);
         font-weight: normal;
         margin-bottom: px2(2);
       }
@@ -277,8 +277,8 @@
   justify-content: center;
   flex-direction: column;
   background-color: #fff;
-  padding-top: px2(35);
-  padding-bottom: px2(35);
+  padding-top: px2(25);
+  padding-bottom: px2(25);
   &-title {
     text-align: center;
     font-size: px2(26);
@@ -286,33 +286,55 @@
     padding: 0 5px;
     line-height: px2(26);
     margin-bottom: px2(20);
+    font-family: Ubuntu-Bold sans-serif;
+    letter-spacing: 0;
   }
   &-subTitle {
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-size: px2(18);
     margin-left: px2(50);
     padding: 0 5px;
     line-height: px2(18);
   }
+  &-list {
+    width: px2(350);
+    padding-bottom: px2(22);
+    background: #F8F5FC;
+    border: px2(2) solid #4324BA;
+    border-radius: px2(4);
+  }
+  &-line {
+    position: absolute;
+    margin-top: px2(35);
+    width: px2(250);
+    height: px2(180);
+    z-index: 2;
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   &-item {
-    width: 100%;
-    text-align: left;
-    padding-left: px2(50);
-    padding-right: px2(30);
-    font-size: px2(16);
-    line-height: px2(16);
-    margin-bottom: px2(20);
-    &:before {
-      content: "";
-      position: relative;
-      left: px2(-15);
-      top: px2(11);
-      display: block;
-      width: px2(5);
-      height: px2(5);
-      border-radius: px2(5);
-      background: red;
+    margin: 14px 0;
+    font-family: Ubuntu-Medium sans-serif;
+    font-size: px2(14);
+    color: #4324BA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-text {
+      text-align: center;
+    }
+    &-image {
+      width: px2(88);
+      height: px2(88);
+      margin: px2(22) 0;
+      z-index: 3;
+      &-img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   &-textRed {
@@ -325,8 +347,52 @@
     font-size: px2(20);
   }
 }
+.i-platformHelp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &-title {
+    color: #4324ba;
+    padding: 0 px2(2.5);
+    margin-bottom: px2(20);
+    font-family: Ubuntu-Bold sans-serif;
+    font-size: px2(26);
+    text-align: center;
+  }
+  &-list {
+    width: px2(350);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-item {
+    width: px2(360);
+    background: #4324BA;
+    height: px2(128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Ubuntu sans-serif;
+    font-size: px2(14);
+    color: #FFFFFF;
+    padding: 0 px2(20);
+    margin: px2(5) px2(5);
+    text-align: center;
+    &-bg {
+      position: absolute;
+      margin-left: px2(140);
+      margin-top: px2(25);
+      opacity: 0.1;
+      font-family: Ubuntu sans-serif;
+      font-size: px2(64);
+      color: #FFFFFF;
+    }
+  }
+}
 .i-bgGray {
   background-color: #fbfbfb;
-  padding-top: 79px;
-  padding-bottom: 79px;
+  padding-top: px2(25);
+  padding-bottom: px2(25);
 }

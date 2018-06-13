@@ -51,11 +51,10 @@
     &-name {
       font-size: px2(20);
       color: #4324ba;
-      margin-left: px2(120);
+      text-align: center;
       line-height: px2(24);
       @extend %no-margin;
       margin-bottom: px2(7);
-      padding-top: px2(78 - 30);
     }
     &-position {
       font-size: px2(16);

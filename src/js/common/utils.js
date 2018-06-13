@@ -86,7 +86,7 @@ export function navScroll (
   activeClass = 'i-nav-main-item-active'
 ) {
   Array.from($navItems).forEach(item => {
-    item.addEventListener('click', function () {
+    item && item.addEventListener('click', function () {
       const { windowScroll, top } = _getScrollInfo()
       const $node = getId(this.getAttribute('data-target'))
       const currentTop = $node.offsetTop - $header.offsetHeight
@@ -100,13 +100,13 @@ export function navScroll (
 }
 
 export function showForm ($formLink) {
-  $formLink.addEventListener('click', function () {
+  $formLink && $formLink.addEventListener('click', function () {
     $formLink.style.display = 'none'
     getId('mc_embed_signup').style.display = 'block'
   })
 }
 export function returnToBack ($backToTop) {
-  $backToTop.addEventListener('click', function () {
+  $backToTop && $backToTop.addEventListener('click', function () {
     const scrollTop =
       document.documentElement.scrollTop || document.body.scrollTop
     _scrollTop(scrollTop, 0)

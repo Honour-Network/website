@@ -8,7 +8,7 @@
 .i-nav {
   position: fixed;
   top: 50%;
-  left: -186px;
+  left: -250px;
   transition: 0.35s;
   transform: translateY(-50%);
   display: flex;
@@ -17,7 +17,7 @@
     left: 0;
   }
   &-main {
-    width: 186px;
+    width: 250px;
     background-color: rgba(67, 36, 186, 0.9);
     padding: 38px - 26px 30px;
     &-list {

@@ -68,7 +68,7 @@ $g-header-padding: px2(20);
 }
 .g-header-type2 {
   background-image: linear-gradient(-270deg, #784ade 0%, #4324ba 100%);
-  .g-header-nav {
-    display: none;
-  }
+}
+#headerBar {
+  display: none;
 }
