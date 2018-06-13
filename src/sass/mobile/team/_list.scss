@@ -1,6 +1,7 @@
 .t-list {
   padding: px2(55) px2(20) 0;
 }
+
 .t-item {
   position: relative;
   padding: px2(30) 0;
@@ -49,30 +50,32 @@
   &-staff {
     // flex: 1;
     &-name {
+      width: px2(200);
       font-size: px2(20);
       color: #4324ba;
-      text-align: center;
       line-height: px2(24);
       @extend %no-margin;
       margin-bottom: px2(7);
+      margin-left: px2(125);
     }
     &-position {
       font-size: px2(16);
-      margin-left: px2(120);      
       font-weight: normal;
       color: #4324ba;
       line-height: px2(22);
       @extend %no-margin;
       margin-bottom: px2(22);
+      margin-left: px2(125);
     }
     &-position-desc {
       font-size: px2(16);
       color: #ff5c3c;
       line-height: px2(30);
+      margin-top: px2(50);
       @extend %no-margin;
       // margin-bottom: px2();
-      &>a {
-      color: #ff5c3c;        
+      & > a {
+        color: #ff5c3c;
       }
     }
     &-introduce {
