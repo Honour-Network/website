@@ -1,7 +1,6 @@
 .i-vision {
-  background-color:#fbfbfb; 
+  background-color: #fbfbfb;
   &-inner {
-    height: px2(170);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,9 +11,9 @@
     &-inner {
       @extend %no-margin;
       font-size: px2(16);
-      line-height: px2(18);
+      line-height: px2(20);
       text-align: center;
-      color: #4324ba;
+      color: #999999;
     }
   }
 }

@@ -15,7 +15,7 @@ $base-color: #333;
 }
 
 @font-face {
-  font-family: "ubuntu";
+  font-family: "ubuntu", sans-serif;
   src: url("#{$webFontUrl}/ubuntu-r.woff2") format("woff2"),
     url("#{$webFontUrl}/ubuntu-r.woff") format("woff");
   font-weight: normal;

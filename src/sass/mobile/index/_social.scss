@@ -3,9 +3,11 @@
   left: px2(10);
   color: #fff;
 }
-#describe{
-      margin-top: px2(20);
+
+#describe {
+  margin-top: px2(20);
 }
+
 .i-social {
   padding: px2(20) 0 px2(30);
   .i-section-title {
@@ -58,46 +60,45 @@
       width: 100%;
     }
   }
-  &-describe{
-    width:100%;
-    height:100%;
+  &-describe {
+    width: 100%;
+    height: 100%;
     // background-color: #ccc;
     // position:relative;
   }
-  &-animal-describe{
+  &-animal-describe {
     // position:absolute;
-    font-family: ubuntu,sans-serif;
     font-size: 31px;
     color: #777777;
     // line-height: 22px;
     text-align: center;
-    width:100%;
-    z-indent:2;
-    left:43px;
-    top:171px;
+    width: 100%;
+    z-indenx: 2;
+    left: 43px;
+    top: 171px;
   }
-  &-sub-title{
+  &-sub-title {
     font-size: 41px;
     color: #4324ba;
     font-weight: 400;
     line-height: 3px;
   }
-  &-sub-title-none{
-    white-space:nowrap;
+  &-sub-title-none {
+    white-space: nowrap;
     font-size: 33px;
     color: #333333;
   }
-  &-sub-title-sec{
-    word-break:break-all;
-    width:92%;
+  &-sub-title-sec {
+    word-break: break-all;
+    width: 92%;
     line-height: 32px;
     text-align: center;
     margin-left: 24px;
     color: #333333;
   }
-  &-sub-title-none-break{
-    word-break:break-all;
-    width:92%;
+  &-sub-title-none-break {
+    word-break: break-all;
+    width: 92%;
     color: #333333;
     margin-left: 20px;
   }

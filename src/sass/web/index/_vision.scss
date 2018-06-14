@@ -1,6 +1,6 @@
 .i-vision {
-  background-color:#fbfbfb; 
-  height: 250px;
+  background-color:#fbfbfb;
+  padding: 50px 0;
   &-inner {
     display: flex;
   }
@@ -9,11 +9,10 @@
     height: 250px;
     @extend %flex-center;
     &-inner {
-      line-height: 61px;
-      height: 87px;
+      line-height: 36px;
       font-size: 26px;
       text-align: center;
-      color: #4324ba;
+      color: #999999;
     }
   }
 }
