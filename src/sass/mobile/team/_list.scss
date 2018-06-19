@@ -1,5 +1,12 @@
-.t-list {
-  padding: px2(55) px2(20) 0;
+.t-title {
+  padding: px2(40) 0 px2(40) 0;
+  border-bottom: 1px solid #9d9d9d;
+  font-size: px2(30);
+  font-weight: bolder;
+  text-align: center;
+  color: #4324ba
+}
+.t-list{
 }
 
 .t-item {
@@ -48,15 +55,22 @@
     }
   }
   &-staff {
-    // flex: 1;
-    &-name {
-      width: px2(200);
+    &-title {
       font-size: px2(20);
+      font-weight: bolder;
       color: #4324ba;
       line-height: px2(24);
       @extend %no-margin;
-      margin-bottom: px2(7);
-      margin-left: px2(125);
+      margin-bottom: px2(15);
+      text-align: center;
+    }
+    &-name {
+      font-size: px2(20);
+      font-weight: bolder;
+      color: #4324ba;
+      line-height: px2(24);
+      @extend %no-margin;
+      margin: 0 0 px2(15) px2(125);
     }
     &-position {
       font-size: px2(16);
@@ -64,24 +78,32 @@
       color: #4324ba;
       line-height: px2(22);
       @extend %no-margin;
-      margin-bottom: px2(22);
-      margin-left: px2(125);
-    }
-    &-position-desc {
-      font-size: px2(16);
-      color: #ff5c3c;
-      line-height: px2(30);
-      margin-top: px2(50);
-      @extend %no-margin;
-      // margin-bottom: px2();
-      & > a {
+      margin: 0 0 px2(15) px2(125);
+      &-title {
+        font-size: px2(16);
         color: #ff5c3c;
+        line-height: px2(16);
+        margin: px2(15) 0;
+        @extend %no-margin;
+        & > a {
+          color: #ff5c3c;
+        }
+      }
+      &-desc {
+        font-size: px2(16);
+        color: #ff5c3c;
+        line-height: px2(22);
+        margin: px2(50) 0 px2(15) 0;
+        @extend %no-margin;
+        & > a {
+          color: #ff5c3c;
+        }
       }
     }
     &-introduce {
       font-size: px2(16);
       color: #777777;
-      line-height: px2(30);
+      line-height: px2(22);
       margin-bottom: px2(10);
       @extend %no-margin;
     }
@@ -90,6 +112,7 @@
       max-height: px2(79);
     }
     &-chart {
+      padding-bottom: px2(75);
       &-table {
         margin-bottom: px2(10);
         td {
@@ -99,6 +122,7 @@
       &-canvas {
         width: 100%;
         height: px2(150);
+        padding: px2(25) 0;
       }
     }
   }
