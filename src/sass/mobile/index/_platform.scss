@@ -27,6 +27,22 @@
       color: #fff;
       text-decoration: none;
     }
+    &-button {
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      width: px2(276);
+      height: px2(40);
+      line-height: px2(40);
+      border: px2(1) solid #fff;
+      border-radius: px2(20);
+      -webkit-transition: color 0.35s;
+      -o-transition: color 0.35s;
+      transition: color 0.35s;
+      font-size: px2(16);
+    }
   }
   &-sub-title {
     @extend %no-margin;
