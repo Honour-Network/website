@@ -83,7 +83,7 @@
         font-size: px2(16);
         color: #333;
         height: px2(40);
-        padding:0 px2(20);
+        padding: 0 px2(20);
         background: #fcfcfc;
         border: px2(1) solid #fcfcfc;
         border-radius: px2(100);
@@ -126,6 +126,7 @@
     }
   }
 }
+
 div[for="mce-EMAIL"] {
   text-align: center;
   margin: 0 !important;
@@ -134,4 +135,54 @@ div[for="mce-EMAIL"] {
   width: px2(280);
   color: #fff;
   background-color: transparent !important;
+}
+
+.i-demo {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  @extend %flex-center;
+  &-inner {
+    width: px2(300);
+    height: px2(150);
+    background: #FFFFFF;
+    box-shadow: 0 0 px2(27) 0 rgba(0, 0, 0, 0.50);
+    border-radius: px2(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &-text {
+      @extend %flex-center;
+      height: px2(70);
+      font-size: px2(13);
+      color: #333333;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    &-button {
+      @extend %flex-center;
+      background: #4324BA;
+      border-radius: px2(50);
+      line-height: px2(24);
+      width: px2(150);
+      height: px2(30);
+      border: 1px solid #fff;
+      -webkit-transition: color 0.35s;
+      -o-transition: color 0.35s;
+      transition: color 0.35s;
+      text-decoration: none;
+      font-size: 22px;
+      letter-spacing: 0;
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
 }
