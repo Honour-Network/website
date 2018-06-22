@@ -1,5 +1,5 @@
 .i-banner {
-  height: px2(480);
+  height: px2(550);
   background: url("../assets/banner.jpg") no-repeat center;
   background-size: cover;
   position: relative;
@@ -58,7 +58,7 @@
     }
   }
   &-mail {
-    display: none;
+    margin-top: px2(15);
     &-title {
       font-size: px2(14);
       color: #ffffff;

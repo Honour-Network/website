@@ -11,12 +11,12 @@ responsive().then(() => {
   const $demoLink = getId('demoLink');
   const $demoHeader = getId('demoHeader');
   const $demoHeaderBar = getId('demoHeaderBar');
-  showForm($formLink);
+  // showForm($formLink);
   showDemoLink($demoHeader);
   if(!isMobile()) {
     showDemoLink($demoHeaderBar);
   }
-  showDemoLink($demoLink);
+  // showDemoLink($demoLink);
   returnToBack($backToTop);
   handleNavs();
   onInitScorllListener($backToTop, $header);
