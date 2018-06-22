@@ -110,6 +110,11 @@ export function showForm ($formLink) {
 
 export function showDemoLink ($demoLink) {
   $demoLink && $demoLink.addEventListener('click', function () {
+    if(isMobile()) {
+      let $navBar = getId('headerBar');
+      $navBar.style.display = 'none';
+      document.body.style.overflow = 'hidden';
+    }
     let $demoLayer = getId('demoLayer');
     if ($demoLayer) {
       $demoLayer.style.visibility = 'visible';

@@ -152,6 +152,7 @@ div[for="mce-EMAIL"] {
   background: rgba(0, 0, 0, 0.4);
   z-index: 99;
   @extend %flex-center;
+  transition: all 0.2s ease-in-out;
   &-inner {
     width: 778px;
     height: 263px;
