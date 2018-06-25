@@ -114,6 +114,7 @@ pages.forEach(pathname => {
     env: process.env.NODE_ENV,
     filename: pathname + ".html", //生成的html存放路径，相对于path
     template: path.resolve(__dirname, "../src/template/" + pathname + ".html"), //html模板路径
+    favicon: path.resolve(__dirname, "../static/favicon.ico"),
     hash: false, //是否添加hash值
     minify: {
       //压缩HTML文件
