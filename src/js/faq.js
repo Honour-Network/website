@@ -9,16 +9,14 @@ require('echarts/lib/component/legend');
 
 const dataList1 = [
   {value: 728000000 * 0.55, name: 'Token Available For Sales'},
-  {value: 728000000 * 0.025, name: 'Social Give Back'},
-  {value: 728000000 * 0.1, name: 'Community & \nIndustry Development'},
-  {value: 728000000 * 0.105, name: 'Company Reserve'},
+  {value: 728000000 * 0.2, name: 'Community Fund\n For Development'},
+  {value: 728000000 * 0.03, name: 'Company Reserve'},
   {value: 728000000 * 0.22, name: 'Team, Founders, Advisors,\n Partners & Marketing Expenses'},
 ];
 const dataListMobile1 = [
   {value: 728000000 * 0.55, name: 'Token \nAvailable\n For Sales'},
-  {value: 728000000 * 0.025, name: 'Social Give Back'},
-  {value: 728000000 * 0.1, name: 'Community \n& Industry\n Development'},
-  {value: 728000000 * 0.105, name: 'Company\n Reserve'},
+  {value: 728000000 * 0.2, name: 'Community\n Fund For\n Development'},
+  {value: 728000000 * 0.03, name: 'Company\n Reserve'},
   {value: 728000000 * 0.22, name: 'Team, Founders,\n Advisors, Partners\n & Marketing\n Expenses'},
 ];
 const option1 = {
