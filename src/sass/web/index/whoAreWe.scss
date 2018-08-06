@@ -1,0 +1,60 @@
+.i-whoAreWe {
+  background-color: #FFFFFF;
+  padding: 112px 0;
+  &-inner {
+    @extend %flex-center;
+    flex-direction: column;
+    &-title {
+      font-family: Ubuntu-Bold sans-serif;
+      font-size: 46px;
+      color: #2A63FD;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    &-subTitle {
+      margin-top: 20px;
+      font-family: Ubuntu sans-serif;
+      font-size: 26px;
+      color: #4324BA;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    &-list {
+      @extend %flex-center;
+      &-item {
+        flex: 1;
+        @extend %flex-center;
+        flex-direction: column;
+        margin-left: 40px;
+        &-img {
+          width: 200px;
+          height: 200px;
+          margin-top: 90px;
+          img {
+            object-fit: cover;
+            object-position: 0 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &-title {
+          margin-top: 40px;
+          font-family: Ubuntu sans-serif;
+          font-size: 24px;
+          color: #4324BA;
+          letter-spacing: 0;
+          text-align: center;
+        }
+        &-content {
+          margin-top: 25px;
+          width: 360px;
+          font-family: Ubuntu sans-serif;
+          font-size: 22px;
+          color: #666666;
+          letter-spacing: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
