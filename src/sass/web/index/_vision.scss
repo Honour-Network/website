@@ -2,17 +2,18 @@
   background-color:#fbfbfb;
   padding: 50px 0;
   &-inner {
-    display: flex;
+    @extend %flex-center;
   }
   &-item {
     width: 560px;
     height: 250px;
     @extend %flex-center;
     &-inner {
-      line-height: 36px;
-      font-size: 26px;
+      font-family: Ubuntu-Medium sans-serif;
+      font-size: 36px;
+      color: #05BAC5;
+      letter-spacing: 0;
       text-align: center;
-      color: #999999;
     }
   }
 }

@@ -1,0 +1,29 @@
+.i-assets {
+  background-color: #FFFFFF;
+  padding: 85px 0;
+  &-inner {
+    @extend %flex-center;
+  }
+  &-item {
+    @extend %flex-center;
+    &-img {
+      flex: 1;
+      width: 560px;
+      height: 326px;
+      img {
+        object-fit: cover;
+        object-position: 0 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-inner {
+      margin-left: 40px;
+      flex: 1;
+      font-family: Ubuntu-Medium sans-serif;
+      font-size: 26px;
+      color: #4324BA;
+      letter-spacing: 0;
+    }
+  }
+}
