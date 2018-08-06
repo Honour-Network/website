@@ -1,0 +1,54 @@
+.i-problems {
+  background: url("../assets/pic2.jpg") no-repeat center;
+  background-size: 100%;
+  &-inner {
+    @extend %flex-center;
+    flex-direction: column;
+    &-title {
+      margin-top: 92px;
+      font-family: Ubuntu sans-serif;
+      font-size: 46px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+    &-content {
+      margin-top: 105px;
+      @extend %flex-center;
+      &-img {
+        flex: 1;
+        width: 489px;
+        height: 391px;
+        &-date {
+          @extend %flex-center;
+          justify-content: space-around;
+          &-item {
+            font-family: HelveticaNeue sans-serif;
+            font-size: 16px;
+            color: #FFFFFF;
+          }
+        }
+        img {
+          object-fit: cover;
+          object-position: 0 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-text {
+        flex: 1;
+        margin-left: 110px;
+        font-family: Ubuntu-Medium sans-serif;
+        font-size: 30px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+      }
+    }
+    &-tip {
+      margin: 105px 0 150px;
+      font-family: Ubuntu sans-serif;
+      font-size: 26px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+  }
+}
