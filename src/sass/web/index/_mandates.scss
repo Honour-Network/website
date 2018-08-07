@@ -1,10 +1,10 @@
-.i-platform {
-  background: #FFFFFF;
+.i-mandates {
+  background: #fbfbfb;
   &-inner {
     @extend %flex-center;
     flex-direction: column;
     &-title {
-      margin-top: 100px;
+      margin-top: 120px;
       font-family: Ubuntu-Bold sans-serif;
       font-size: 46px;
       color: #4324BA;
@@ -20,16 +20,16 @@
       text-align: center;
     }
     &-content {
-      margin-top: 25px;
+      margin-top: 40px;
       font-family: Ubuntu sans-serif;
       font-size: 26px;
       color: #FF5C3C;
       letter-spacing: 0;
     }
     &-img {
-      margin-top: 40px;
-      width: 1160px;
-      height: 502px;
+      margin-top: 55px;
+      width: 761px;
+      height: 360px;
       img {
         object-fit: cover;
         object-position: 0 0;
@@ -38,32 +38,28 @@
       }
     }
     &-list {
-      margin-top: 82px;
+      margin-top: 50px;
       margin-bottom: 70px;
       @extend %flex-center;
       align-items: flex-start;
       &-item {
-        margin-left: 80px;
+        margin-left: 40px;
         @extend %flex-center;
+        align-items: flex-start;
         flex-direction: column;
-        &-img {
-          width: 128px;
-          height: 128px;
-          img {
-            object-fit: cover;
-            object-position: 0 0;
-            width: 100%;
-            height: 100%;
-          }
-        }
-        &-text {
-          margin-top: 36px;
-          width: 220px;
-          font-family: Ubuntu-Medium sans-serif;
-          font-size: 25px;
+        &-title {
+          font-family: Ubuntu-MediumItalic sans-serif;
+          font-size: 20px;
           color: #4324BA;
           letter-spacing: 0;
-          text-align: center;
+        }
+        &-content {
+          margin-top: 10px;
+          width: 260px;
+          font-family: Ubuntu sans-serif;
+          font-size: 20px;
+          color: #05BAC5;
+          letter-spacing: 0;
         }
       }
     }
