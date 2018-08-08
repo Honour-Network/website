@@ -13,19 +13,32 @@
   }
   &-title {
     @extend %no-margin;
-    font-size: px2(26);
+    padding: 0 px2(40);
+    font-size: px2(22);
     text-align: center;
     color: #fff;
     line-height: px2(30);
     margin-bottom: px2(10);
     &-formLink {
-      margin-bottom: 0;
+      margin-top: px2(70);
       color: #fff;
       text-decoration: none;
     }
     &-link {
-      color: #fff;
+      cursor: pointer;
       text-decoration: none;
+      padding: px2(13) px2(18);
+      border: 1px solid #FFFFFF;
+      border-radius: px2(100);
+      font-family: Ubuntu-Light sans-serif;
+      font-size: px2(14);
+      color: #FFFFFF;
+      letter-spacing: 0;
+      text-align: center;
+      &:focus {
+        background-color: #fff;
+        color: $base-color;
+      }
     }
     &-button {
       color: #fff;

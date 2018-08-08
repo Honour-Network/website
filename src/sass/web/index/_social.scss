@@ -9,6 +9,8 @@
   &-item {
     margin-right: 40px;
     width: 560px;
+    display: flex;
+    flex-direction: column;
     &:last-of-type {
       margin-right: 0;
     }
@@ -21,6 +23,7 @@
       }
     }
     &-desc {
+      flex: 1;
       margin-bottom: 36px;
       &:last-of-type {
         margin-bottom: 0;

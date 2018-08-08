@@ -11,10 +11,11 @@ responsive().then(() => {
   const $demoLink = getId('demoLink');
   const $demoHeader = getId('demoHeader');
   const $demoHeaderBar = getId('demoHeaderBar');
-  // showForm($formLink);
   showDemoLink($demoHeader);
   if(!isMobile()) {
     showDemoLink($demoHeaderBar);
+  } else {
+    showForm($formLink);
   }
   // showDemoLink($demoLink);
   returnToBack($backToTop);
