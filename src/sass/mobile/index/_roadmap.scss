@@ -1,0 +1,26 @@
+.i-roadmap {
+  background: #fbfbfb;
+  padding: px2(50) 0;
+  &-inner {
+    @extend %flex-center;
+    flex-direction: column;
+    &-title {
+      font-family: Ubuntu-Bold sans-serif;
+      font-size: px2(26);
+      color: #FF5C3C;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    &-img {
+      margin-top: px2(40);
+      width: px2(335);
+      height: px2(657);
+      img {
+        object-fit: cover;
+        object-position: 0 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

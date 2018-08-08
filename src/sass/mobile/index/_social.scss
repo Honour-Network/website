@@ -9,12 +9,10 @@
 }
 
 .i-social {
-  padding: px2(20) 0 px2(30);
+  padding-bottom: px2(30);
   .i-section-title {
-    padding: 0 px2(20);
   }
   .i-section-sub-title {
-    padding: 0 px2(20);
   }
   &-list-wrapper {
     overflow-y: auto;
@@ -24,7 +22,6 @@
   }
   &-list {
     margin-top: px2(20);
-    padding-left: px2(20);
     display: flex;
     flex-wrap: nowrap;
   }
