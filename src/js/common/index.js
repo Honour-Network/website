@@ -17,7 +17,6 @@ responsive().then(() => {
   } else {
     showForm($formLink);
   }
-  // showDemoLink($demoLink);
   returnToBack($backToTop);
   handleNavs();
   onInitScorllListener($backToTop, $header);
