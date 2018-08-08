@@ -1,3 +1,9 @@
+.container {
+    width: px2(375);
+    margin: 0 auto;
+    padding: 0 px2(20);
+    overflow: hidden;
+}
 .base-style {
     font-size: px2(14);
     padding:px2(60) px2(20)  px2(20);
