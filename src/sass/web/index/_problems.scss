@@ -1,6 +1,5 @@
 .i-problems {
   background: url("../assets/pic2.jpg") no-repeat center;
-  background-size: 100%;
   &-inner {
     @extend %flex-center;
     flex-direction: column;
