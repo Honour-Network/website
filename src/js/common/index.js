@@ -1,7 +1,7 @@
 import Lazyload from './lazyload.js';
 import responsive from './responsive.js';
 import handleNavs from './nav.js';
-import {getId, onInitScorllListener, returnToBack, showForm, showDemoLink, isMobile} from './utils';
+import {getId, onInitScorllListener, returnToBack, showForm, showDemoLink, showWhitepaper, isMobile} from './utils';
 
 responsive().then(() => {
   getId('loading').style.display = 'none';
@@ -11,9 +11,11 @@ responsive().then(() => {
   const $demoLink = getId('demoLink');
   const $demoHeader = getId('demoHeader');
   const $demoHeaderBar = getId('demoHeaderBar');
+  const $whitepaper = getId('whitepaper');
   showDemoLink($demoHeader);
   if(!isMobile()) {
     showDemoLink($demoHeaderBar);
+    showWhitepaper($whitepaper)
   } else {
     showForm($formLink);
   }
