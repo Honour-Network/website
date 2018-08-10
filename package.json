@@ -5,7 +5,7 @@
   "main": "./build/webpack.dev.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config ./build/webpack.dev.config.js --colors",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config ./build/webpack.dev.config.js --colors --host 192.168.2.86",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.build.config.js --hide-modules"
   },
   "dependencies": {
