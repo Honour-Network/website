@@ -104,7 +104,6 @@
 
         let self = this
         this.images.forEach(function (image) {
-          console.log(image)
           let src = image.getAttribute(self.settings.src)
           let srcset = image.getAttribute(self.settings.srcset)
           if (image.tagName.toLowerCase() === 'img') {

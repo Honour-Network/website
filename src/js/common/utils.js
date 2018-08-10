@@ -110,7 +110,7 @@ export function showForm ($formLink) {
 
 export function showDemoLink ($demoLink) {
   $demoLink && $demoLink.addEventListener('click', function () {
-    if(isMobile()) {
+    if (isMobile()) {
       let $navBar = getId('headerBar');
       $navBar.style.display = 'none';
       document.body.style.overflow = 'hidden';
@@ -120,7 +120,7 @@ export function showDemoLink ($demoLink) {
       $demoLayer.style.visibility = 'visible';
       document.body.style.overflow = 'hidden';
       $demoLayer.addEventListener('click', function (event) {
-        if(event.target.className && event.target.className.indexOf("i-demo-inner") > -1) {
+        if (event.target.className && event.target.className.indexOf('i-demo-inner') > -1) {
           return false;
         } else {
           $demoLayer.style.visibility = 'hidden';
@@ -129,6 +129,18 @@ export function showDemoLink ($demoLink) {
       });
     }
   });
+}
+
+export function showWhitepaper ($whitepaper) {
+  let whitepaperList = getId('whitepaperList')
+  if(whitepaperList) {
+    $whitepaper && $whitepaper.addEventListener('mouseover', function () {
+      whitepaperList.style.visibility = 'visible';
+    });
+    $whitepaper && $whitepaper.addEventListener('mouseout', function () {
+      whitepaperList.style.visibility = 'hidden';
+    });
+  }
 }
 
 export function returnToBack ($backToTop) {
