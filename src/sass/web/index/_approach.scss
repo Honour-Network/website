@@ -49,7 +49,7 @@
           letter-spacing: 0;
           text-align: center;
           background-image: linear-gradient(-135deg, #3F2A9F 0%, #39277E 100%);
-          &::after {
+          &::before {
             content: '#{$i}';
             position: absolute;
             opacity: 0.15;
