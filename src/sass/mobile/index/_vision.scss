@@ -1,19 +1,16 @@
 .i-vision {
   background-color: #fbfbfb;
+  padding: px2(38) 0;
   &-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: px2(34) px2(20);
+    @extend %flex-center;
   }
   &-item {
-    @extend .text-center;
+    @extend %flex-center;
     &-inner {
-      @extend %no-margin;
-      font-size: px2(16);
-      line-height: px2(20);
-      text-align: center;
-      color: #999999;
+      font-family: Ubuntu sans-serif;
+      font-size: px2(20);
+      color: #05BAC5;
+      letter-spacing: 0;
     }
   }
 }

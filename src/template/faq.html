@@ -8,7 +8,7 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>honour.network</title>
     <style>
         .hide {
             display: none;
@@ -20,7 +20,7 @@
 <header class='g-header g-header-type2' id='gHeader'>
   <div class="g-header-logo">
     <a href="/">
-      <img class='g-header-logo-asset lazyload' src="../assets/logo.png" alt="">
+      <img class='g-header-logo-asset lazyload' data-src="../assets/logo.png" alt="">
     </a>
   </div>
   <nav class="g-header-nav" id='gHeaderNav'>
@@ -40,8 +40,14 @@
       <li class='g-header-navbar-item'>
         <a href="faq.html" class='g-header-navbar-link'>FAQ</a>
       </li>
-      <li class='g-header-navbar-item'>
-        <a href="/static/Honour_Network_White_Paper_Final_Draft_2018-07-12.pdf" class='g-header-navbar-link'>Whitepaper</a>
+      <li class='g-header-navbar-item' id="whitepaper">
+        <a href="javascript:" class='g-header-navbar-link'>Whitepaper</a>
+        <div class="g-header-navbar-listDiv" id="whitepaperList">
+          <div class="g-header-navbar-listDiv-content">
+            <a href="/static/HN_WP_2018-08-09.pdf" target="_blank" class='g-header-navbar-link'>EN</a>
+            <a href="/static/HN_WP_ZH_2018-08-09.pdf" target="_blank" class='g-header-navbar-link'>中文</a>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>
@@ -65,7 +71,10 @@
         <a href="/faq.html" class='i-nav-main-link'>FAQ</a>
       </li>
       <li class="i-nav-main-item" data-target="problems">
-        <a href="/static/Honour_Network_White_Paper_Final_Draft_2018-07-12.pdf" class='i-nav-main-link'>Whitepaper</a>
+        <a href="/static/HN_WP_2018-08-09.pdf" class='i-nav-main-link'>Whitepaper-EN</a>
+      </li>
+      <li class="i-nav-main-item" data-target="problems">
+        <a href="/static/HN_WP_ZH_2018-08-09.pdf" class='i-nav-main-link'>Whitepaper-中文</a>
       </li>
     </ul>
   </div>
@@ -101,7 +110,6 @@
             3.  HonourConnect enables more ways for asset-backed tokens to transfer or trade.
             <br>
             4.  HonourGlobal enables anyone anywhere to access our services.
-
           </p>
       <div class="t-item">
         <div class="t-item-staff">

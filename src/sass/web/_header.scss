@@ -21,6 +21,7 @@ $g-header-padding: 30px;
     display: inline-flex;
     @extend %no-list-style;
     &-item {
+      margin-top: 5px;
       margin-right: 25px;
       &:last-of-type {
         margin-right: 0;
@@ -30,6 +31,42 @@ $g-header-padding: 30px;
       color: #fff;
       font-size: 22px;
       text-decoration: none;
+    }
+    &-listDiv {
+      visibility: hidden;
+      min-height: 50px;
+      position: absolute;
+      &-content {
+        margin-top: 30px;
+        padding: 5px 0;
+        transition: .2s ease-out;
+        -webkit-transition: .2s ease-out;
+        //border: 1px solid #999999;
+        border-radius: 5px;
+        background-image: linear-gradient(-180deg, rgba(63,42,159,0.90) 0%, rgba(57,39,126,0.95) 100%);
+        &:before {
+          display: inline-block;
+          position: absolute;
+          width: 0;
+          height: 0;
+          border: solid transparent;
+          border-width: 10px;
+          border-bottom-color: #4324ba;
+          content: "";
+          top: 10px;
+          right: 50px;
+        }
+        @extend %flex-center;
+        flex-direction: column;
+        a {
+          min-width: 120px;
+          height: 50px;
+          @extend %flex-center;
+          &:nth-child(1) {
+            border: 0;
+          }
+        }
+      }
     }
   }
 }

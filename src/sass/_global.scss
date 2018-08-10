@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "./normalize";
 
-$webFontUrl: "http://192.168.31.210:8188/static";
+$webFontUrl: "http://192.168.2.86:8188/static";
 @if ($env == "production") {
   $webFontUrl: "/static";
 }
@@ -46,8 +46,8 @@ body {
 }
 
 .header-with-color {
-  background-image: linear-gradient(-270deg, #784ade 0%, #4324ba 100%);
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5);  
+  background-image: linear-gradient(-180deg, rgba(63,42,159,0.90) 0%, rgba(57,39,126,0.95) 100%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 // loading
 @keyframes line-scale-pulse-out {

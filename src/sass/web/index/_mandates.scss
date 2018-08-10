@@ -1,36 +1,35 @@
-.i-platform {
-  background: #FFFFFF;
-  padding: px2(50) 0;
+.i-mandates {
+  background: #fbfbfb;
   &-inner {
     @extend %flex-center;
     flex-direction: column;
     &-title {
+      margin-top: 120px;
       font-family: Ubuntu-Bold sans-serif;
-      font-size: px2(26);
+      font-size: 46px;
       color: #4324BA;
       letter-spacing: 0;
       text-align: center;
     }
     &-subTitle {
-      margin-top: px2(10);
+      margin-top: 65px;
       font-family: Ubuntu sans-serif;
-      font-size: px2(16);
+      font-size: 40px;
       color: #05BAC5;
       letter-spacing: 0;
       text-align: center;
     }
     &-content {
-      margin-top: px2(10);
+      margin-top: 40px;
       font-family: Ubuntu sans-serif;
-      font-size: px2(16);
+      font-size: 26px;
       color: #FF5C3C;
       letter-spacing: 0;
     }
     &-img {
-      margin-top: px2(20);
-      margin-bottom: px2(20);
-      width: px2(335);
-      height: px2(145.5);
+      margin-top: 55px;
+      width: 761px;
+      height: 360px;
       img {
         object-fit: cover;
         object-position: 0 0;
@@ -39,32 +38,28 @@
       }
     }
     &-list {
+      margin-top: 50px;
+      margin-bottom: 70px;
       @extend %flex-center;
       align-items: flex-start;
-      flex-wrap: wrap;
       &-item {
-        margin-top: px2(30);
-        width: px2(335 / 2);
+        margin-left: 40px;
         @extend %flex-center;
+        align-items: flex-start;
         flex-direction: column;
-        &-img {
-          width: 128px;
-          height: 128px;
-          img {
-            object-fit: cover;
-            object-position: 0 0;
-            width: 100%;
-            height: 100%;
-          }
-        }
-        &-text {
-          margin-top: 36px;
-          width: 220px;
-          font-family: Ubuntu-Medium sans-serif;
-          font-size: 25px;
+        &-title {
+          font-family: Ubuntu-MediumItalic sans-serif;
+          font-size: 20px;
           color: #4324BA;
           letter-spacing: 0;
-          text-align: center;
+        }
+        &-content {
+          margin-top: 10px;
+          width: 260px;
+          font-family: Ubuntu sans-serif;
+          font-size: 20px;
+          color: #05BAC5;
+          letter-spacing: 0;
         }
       }
     }

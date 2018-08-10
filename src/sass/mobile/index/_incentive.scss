@@ -1,0 +1,46 @@
+.i-incentive {
+  background: #FFFFFF;
+  padding: px2(50) 0;
+  &-inner {
+    @extend %flex-center;
+    flex-direction: column;
+    &-title {
+      font-family: Ubuntu-Bold sans-serif;
+      font-size: px2(26);
+      color: #4324BA;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    &-subTitle {
+      margin-top: px2(20);
+      font-family: Ubuntu sans-serif;
+      font-size: px2(16);
+      color: #05BAC5;
+      letter-spacing: 0;
+      text-align: center;
+    }
+    &-content {
+      @extend %flex-center;
+      flex-direction: column;
+      margin-top: px2(30);
+      &-img {
+        width: px2(335);
+        height: px2(315);
+        img {
+          object-fit: cover;
+          object-position: 0 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-text {
+        flex: 1;
+        margin-top: px2(20);
+        font-family: Ubuntu sans-serif;
+        font-size: px2(16);
+        color: #FF5C3C;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
