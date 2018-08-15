@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn run build
+  /usr/local/bin/node /usr/local/bin/yarn run dev
 
 PATH: 
   /Users/liudewei/anaconda2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
@@ -7544,8 +7544,8 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c cross-env NODE_ENV=production webpack --config ./build/webpack.build.config.js --hide-modules
-  Directory: /Users/liudewei/Downloads/归档(1)
+  Arguments: -c cross-env NODE_ENV=dev webpack-dev-server --config ./build/webpack.dev.config.js --colors --host 192.168.2.86
+  Directory: /Users/liudewei/Desktop/honour_html
   Output:
   
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
