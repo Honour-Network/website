@@ -9,7 +9,7 @@
     height: 250px;
     @extend %flex-center;
     &-inner {
-      font-family: Ubuntu-Medium sans-serif;
+      font-family: ubuntu, sans-serif;
       font-size: 40px;
       color: #05BAC5;
       letter-spacing: 0;

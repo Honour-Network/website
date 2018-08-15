@@ -63,6 +63,6 @@
     "url-loader": "^0.5.7",
     "webpack-livereload-plugin": "^1.1.0"
   },
-  "author": "duanliang",
+  "author": "suzhonghui",
   "license": "ISC"
 }

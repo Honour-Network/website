@@ -151,41 +151,41 @@
                     <circle id="Oval-3" fill="#0A283E" cx="9.9" cy="4.5" r="4.5"></circle>
                 </g>
                 <rect id="Rectangle-15-Copy" fill="#0A283E" transform="translate(39.000000, 928.000000) scale(1, -1) rotate(-90.000000) translate(-39.000000, -928.000000) " x="30" y="919" width="18" height="18"></rect>
-                <text id="Minimum-Viable-Produ" font-family="Ubuntu" font-size="16" font-weight="normal" fill="#333333">
+                <text id="Minimum-Viable-Produ" font-family="ubuntu" font-size="16" font-weight="normal" fill="#333333">
                     <tspan x="73" y="160">Minimum Viable Product on </tspan>
                     <tspan x="73" y="178">Testnet</tspan>
                     <tspan x="73" y="196">Life-Cycle Of Fund Creation And </tspan>
                     <tspan x="73" y="214">Management On The Blockchain</tspan>
                 </text>
-                <text id="Phase-1-Testnet-Depl" font-family="Ubuntu" font-size="16" font-weight="normal" fill="#FF5C3C">
+                <text id="Phase-1-Testnet-Depl" font-family="ubuntu" font-size="16" font-weight="normal" fill="#FF5C3C">
                     <tspan x="73" y="114">Phase 1</tspan>
                     <tspan x="73" y="132">Testnet Deployment</tspan>
                 </text>
-                <text id="Production-Version-O" font-family="Ubuntu" font-size="16" font-weight="normal" fill="#333333">
+                <text id="Production-Version-O" font-family="ubuntu" font-size="16" font-weight="normal" fill="#333333">
                     <tspan x="73" y="420">Production Version On MainNet</tspan>
                     <tspan x="73" y="438">Singapore Customers Ready</tspan>
                     <tspan x="73" y="456">Onboarding Of Investors</tspan>
                     <tspan x="73" y="474">Fundraising For Pilot Customers</tspan>
                 </text>
-                <text id="Phase-2-Customers-Re" font-family="Ubuntu-Medium, Ubuntu" font-size="16" font-weight="400" fill="#FF5C3C">
+                <text id="Phase-2-Customers-Re" font-family="ubuntu-Medium, ubuntu" font-size="16" font-weight="400" fill="#FF5C3C">
                     <tspan x="73" y="370">Phase 2 </tspan>
                     <tspan x="73" y="392">Customers Ready On MainNet</tspan>
                 </text>
-                <text id="Minimum-Viable-Produ" font-family="Ubuntu" font-size="16" font-weight="normal" fill="#333333">
+                <text id="Minimum-Viable-Produ" font-family="ubuntu" font-size="16" font-weight="normal" fill="#333333">
                     <tspan x="73" y="658">Minimum Viable Product on </tspan>
                     <tspan x="73" y="676">Testnet</tspan>
                     <tspan x="73" y="694">Life-Cycle Of Fund Creation And </tspan>
                     <tspan x="73" y="712">Management On The Blockchain</tspan>
                 </text>
-                <text id="Phase-3-Internationa" font-family="Ubuntu-Medium, Ubuntu" font-size="16" font-weight="400" fill="#FF5C3C">
+                <text id="Phase-3-Internationa" font-family="ubuntu-Medium, ubuntu" font-size="16" font-weight="400" fill="#FF5C3C">
                     <tspan x="73" y="608">Phase 3</tspan>
                     <tspan x="73" y="630">International Deployment</tspan>
                 </text>
-                <text id="All-regulatory-compl" font-family="Ubuntu" font-size="16" font-weight="normal" fill="#333333">
+                <text id="All-regulatory-compl" font-family="ubuntu" font-size="16" font-weight="normal" fill="#333333">
                     <tspan x="73" y="880">All regulatory compliance met</tspan>
                     <tspan x="73" y="898">International customers ready</tspan>
                 </text>
-                <text id="Phase-4-Internationa" font-family="Ubuntu-Medium, Ubuntu" font-size="16" font-weight="400" fill="#FF5C3C">
+                <text id="Phase-4-Internationa" font-family="ubuntu-Medium, ubuntu" font-size="16" font-weight="400" fill="#FF5C3C">
                     <tspan x="73" y="830">Phase 4</tspan>
                     <tspan x="73" y="852">International Customer Ready</tspan>
                 </text>

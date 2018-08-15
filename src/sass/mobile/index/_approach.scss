@@ -6,7 +6,7 @@
     @extend %flex-center;
     flex-direction: column;
     &-title {
-      font-family: Ubuntu-Bold sans-serif;
+      font-family: ubuntu-Bold , sans-serif;
       font-size: px2(26);
       color: #FF5C3C;
       letter-spacing: 0;
@@ -25,7 +25,7 @@
     }
     &-subTitle {
       margin-top: px2(40);
-      font-family: Ubuntu-Bold sans-serif;
+      font-family: ubuntu-Bold , sans-serif;
       font-size: px2(26);
       color: #4324BA;
       letter-spacing: 0;
@@ -43,7 +43,7 @@
           height: px2(165);
           margin-top: px2(20);
           padding: 0 px2(20);
-          font-family: Ubuntu sans-serif;
+          font-family: ubuntu, sans-serif;
           font-size: px2(24);
           color: #FFFFFF;
           letter-spacing: 0;
@@ -55,7 +55,7 @@
             opacity: 0.15;
             font-size: px2(124);
             color: #FFFFFF;
-            font-family: Ubuntu sans-serif;
+            font-family: ubuntu, sans-serif;
           }
         }
       }

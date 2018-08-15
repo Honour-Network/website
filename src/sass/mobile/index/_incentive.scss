@@ -5,7 +5,7 @@
     @extend %flex-center;
     flex-direction: column;
     &-title {
-      font-family: Ubuntu-Bold sans-serif;
+      font-family: ubuntu-Bold , sans-serif;
       font-size: px2(26);
       color: #4324BA;
       letter-spacing: 0;
@@ -13,7 +13,7 @@
     }
     &-subTitle {
       margin-top: px2(20);
-      font-family: Ubuntu sans-serif;
+      font-family: ubuntu, sans-serif;
       font-size: px2(16);
       color: #05BAC5;
       letter-spacing: 0;
@@ -36,7 +36,7 @@
       &-text {
         flex: 1;
         margin-top: px2(20);
-        font-family: Ubuntu sans-serif;
+        font-family: ubuntu, sans-serif;
         font-size: px2(16);
         color: #FF5C3C;
         letter-spacing: 0;

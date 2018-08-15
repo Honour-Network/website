@@ -5,7 +5,7 @@
     @extend %flex-center;
     flex-direction: column;
     &-title {
-      font-family: Ubuntu-Bold sans-serif;
+      font-family: ubuntu-Bold , sans-serif;
       font-size: px2(26);
       color: #FF5C3C;
       letter-spacing: 0;

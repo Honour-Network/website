@@ -5,7 +5,7 @@
     flex-direction: column;
     &-title {
       margin-top: 92px;
-      font-family: Ubuntu sans-serif;
+      font-family: ubuntu, sans-serif;
       font-size: 46px;
       color: #FFFFFF;
       letter-spacing: 0;
@@ -21,7 +21,7 @@
           @extend %flex-center;
           justify-content: space-around;
           &-item {
-            font-family: HelveticaNeue sans-serif;
+            font-family: HelveticaNeue , sans-serif;
             font-size: 16px;
             color: #FFFFFF;
           }
@@ -36,7 +36,7 @@
       &-text {
         flex: 1;
         margin-left: 110px;
-        font-family: Ubuntu-Medium sans-serif;
+        font-family: ubuntu, sans-serif;
         font-size: 30px;
         color: #FFFFFF;
         letter-spacing: 0;
@@ -44,7 +44,7 @@
     }
     &-tip {
       margin: 105px 0 150px;
-      font-family: Ubuntu sans-serif;
+      font-family: ubuntu, sans-serif;
       font-size: 26px;
       color: #FFFFFF;
       letter-spacing: 0;

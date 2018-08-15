@@ -5,7 +5,7 @@
     @extend %flex-center;
     flex-direction: column;
     &-title {
-      font-family: Ubuntu-Bold sans-serif;
+      font-family: ubuntu-Bold , sans-serif;
       font-size: px2(26);
       color: #FFFFFF;
       letter-spacing: 0;
@@ -25,7 +25,7 @@
           @extend %flex-center;
           justify-content: space-around;
           &-item {
-            font-family: HelveticaNeue sans-serif;
+            font-family: HelveticaNeue , sans-serif;
             font-size: px2(16);
             color: #FFFFFF;
           }
@@ -39,7 +39,7 @@
       }
       &-text {
         order: -1;
-        font-family: Ubuntu sans-serif;
+        font-family: ubuntu, sans-serif;
         font-size: px2(18);
         color: #FFFFFF;
         letter-spacing: 0;
@@ -47,7 +47,7 @@
     }
     &-tip {
       margin-top: px2(40);
-      font-family: Ubuntu sans-serif;
+      font-family: ubuntu, sans-serif;
       font-size: px2(16);
       color: #FFFFFF;
       letter-spacing: 0;
