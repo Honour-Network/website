@@ -1,5 +1,5 @@
 import {physics} from 'popmotion';
-import scroll from 'stylefire/scroll';
+import scroll from 'stylefire';
 import throttle from 'lodash/throttle';
 
 function hasClass (elem, cls) {
