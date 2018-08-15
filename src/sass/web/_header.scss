@@ -71,9 +71,9 @@ $g-header-padding: 30px;
   }
 }
 
-.g-header-type2 {
+.g-header {
   z-index: 10000000;
-  background-image: linear-gradient(270deg, #784ADE 0%, #4324BA 100%);
+  background-image: linear-gradient(-180deg, rgba(63,42,159,0.90) 0%, rgba(57,39,126,0.95) 100%);
 }
 
 #headerBar {
