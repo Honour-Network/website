@@ -89,12 +89,6 @@ const baseConfig = {
     }
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      //全局配置加载
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {
