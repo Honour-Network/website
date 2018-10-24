@@ -1,35 +1,43 @@
-<!-- 公共头部 -->
-@@include('common/head.html')
-<section class='i-banner'>
-  <video class='i-banner-video u-web' id='video' muted loop autoplay>
-    <source src="../static/movie.mp4" type="video/mp4" />
-  </video>
-  <div class='i-banner-inner'>
-    @@include('common/header.html', {
-    "class": ""
-    })
-    @@include('index/banner.html')
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>honour.network</title>
+  <style>
+    #bg {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #bg img {
+      width: 100%;
+      height: 100%;
+      object-position: 0 0;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="bg"></div>
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117106038-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-<section class="i-main">
-  @@include('index/demo.html')
-  @@include('index/assets.html')
-  @@include('index/vision.html')
-  @@include('index/whoAreWe.html')
-  @@include('index/problems.html')
-  @@include('index/approach.html')
-  @@include('index/protocol.html')
-  @@include('index/platform.html')
-  @@include('index/mandates.html')
-  @@include('index/incentive.html')
-  @@include('index/roadmap.html')
-  @@include('index/connect.html')
-  @@include('index/team.html')
-</section>
+  function gtag () {
+    window.dataLayer.push(arguments);
+  }
 
-<!-- 导航 -->
-@@include('index/nav.html')
-
-<!-- 公共底部 -->
-@@include('common/footer.html')
+  function isMobile () {
+    return /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-117106038-1');
+  document.getElementById('bg').innerHTML = isMobile() ? '<img src="../assets/underMaintenance_mobile.png">' : '<img src="../assets/underMaintenance.png">';
+</script>
+</html>
